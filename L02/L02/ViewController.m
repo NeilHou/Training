@@ -13,7 +13,47 @@
 @end
 
 @implementation ViewController
-// issue testing
+ //issue testing
+
+- (IBAction)sd1:(UIButton *)sender {
+    _nameLabel.text = @"Harden";
+    
+    
+    _ageLabel.text = @"24";
+   
+    
+    _idLabel.text = @"fear bear";
+
+    _classLabel.text = @"houston";
+
+    
+    _hobbyLabel.text = @"basketball";
+
+}
+
+
+
+//- (instancetype)initWithName:(NSString *)name
+//                  age:((NSString *)age
+//                    :(NSString *)sNumber
+//{
+//    // Call the superclass's designated initializer
+//    self = [super init];
+//    
+//    // Did the superclass's designated initializer succeed?
+//    if (self) {
+//        // Give the instance variables initial values
+//        _itemName = name;
+//        _serialNumber = sNumber;
+//        _valueInDollars = value;
+//        // Set _dateCreated to the current date and time
+//        _dateCreated = [[NSDate alloc] init];
+//    }
+//       return self;
+//}
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

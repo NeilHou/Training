@@ -11,5 +11,31 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *classLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *hobbyLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *nameTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *ageTitle;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *idTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *classTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *hobbyTitle;
+
+
 @end
 
