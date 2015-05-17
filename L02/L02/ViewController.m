@@ -32,6 +32,7 @@
 }
 
 
+//related to #2
 
 //- (instancetype)initWithName:(NSString *)name
 //                  age:((NSString *)age
