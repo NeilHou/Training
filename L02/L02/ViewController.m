@@ -36,6 +36,8 @@
 
 //related to #2
 
+//closed #3
+
 //- (instancetype)initWithName:(NSString *)name
 //                  age:((NSString *)age
 //                    :(NSString *)sNumber
