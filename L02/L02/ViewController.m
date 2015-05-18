@@ -30,7 +30,9 @@
     _hobbyLabel.text = @"basketball";
 
 }
-
+- (IBAction)sd2:(id)sender {
+}
+//close #2
 
 //related to #2
 
