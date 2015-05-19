@@ -28,40 +28,47 @@
 //    
 //    CGRect newFrame = CGRectMake(labelX, labelY, labbel1Frame.size.width, labbel1Frame.size.height);
 //    myrect.frame = newFrame ;
-    
-//    UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    //
 //    
-//    
-//    CGRect  numberViewBounds =labelView1.bounds;
-//    
-//    CGRect numberFrame = numberlLabel.frame;
-//    
-//    CGFloat nlabelX = (numberViewBounds.size.width- numberFrame.size.width)/2;
-//    CGFloat nlabelY = (numberViewBounds.size.height -numberFrame.size.height)/2;
-//    
-//    numberlLabel.text =@"1";
-//    [labelView1 addSubview:numberlLabel];
-//    
-//    CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
-//    
-//    numberlLabel.frame = textFrame;
+
     //    CGFloat x = 30+ 170 * i ;
 //    CGFloat y = 10+ 250 * i;
     
 
     CGFloat width = 120,height = 240;
-    CGRect sc =[[UIScreen mainScreen] bounds];
-    sc.size.height *=2;
-
+    CGRect sc =self.view.bounds;
+    sc.size.height = sc.size.height + 100;
+    self.sv.contentSize = sc.size;
     
+    //row one rect display
     for (int i = 0; i < 3;  i++) {
+        
         LabelView *multiRect = [[LabelView alloc] initWithFrame:CGRectMake(40,10+ 250 * i, width, height)];
         [self.sv addSubview:multiRect];
-        multiRect.backgroundColor = [UIColor greenColor];
+        multiRect.backgroundColor = [UIColor grayColor];
+        
+//            UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+//
+//            CGRect  numberViewBounds =self.sv.bounds;
+//        
+//            CGRect numberFrame = numberlLabel.frame;
+//        
+//            CGFloat nlabelX = (numberViewBounds.size.width- numberFrame.size.width)/2;
+//            CGFloat nlabelY = (numberViewBounds.size.height -numberFrame.size.height)/2;
+//        
+//            numberlLabel.text =@"i+1";
+//            [self.sv addSubview:numberlLabel];
+//        
+//            CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
+//            
+//            numberlLabel.frame = textFrame;
       
     }
     
-    for (int j= 0; j < 3;  j++) {
+    
+    //row two rect display
+    for (int j= 0; j < 3;  j++)
+    {
         LabelView *multiRect = [[LabelView alloc] initWithFrame:CGRectMake(200,10+ 250 * j, width, height)];
         [self.sv addSubview:multiRect];
         multiRect.backgroundColor = [UIColor greenColor];
