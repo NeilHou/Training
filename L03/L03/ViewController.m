@@ -66,17 +66,17 @@
         
         [multiRect addSubview:numberlLabel];
 
-      
+      numberlLabel.font = [UIFont systemFontOfSize:40];
     }
     
     
     //row two rect display
     for (int j= 0; j < 3;  j++)
     {
-        LabelView *multiRect = [[LabelView alloc] initWithFrame:CGRectMake(200,10+ 250 * j, width, height)];
+        LabelView *multiRect = [[LabelView alloc] initWithFrame:CGRectMake(210,10+ 250 * j, width, height)];
         [self.sv addSubview:multiRect];
         multiRect.backgroundColor = [UIColor greenColor];
-        UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(200,10+ 250 * j, width, height)];
+        UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(210,10+ 250 * j, width, height)];
         
         CGRect  numberViewBounds =multiRect.bounds;
         
@@ -90,7 +90,7 @@
         CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
         
         numberlLabel.frame = textFrame;
-        
+        numberlLabel.font = [UIFont systemFontOfSize:40];
         
         [multiRect addSubview:numberlLabel];
 
