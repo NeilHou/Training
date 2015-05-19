@@ -47,21 +47,25 @@
         [self.sv addSubview:multiRect];
         multiRect.backgroundColor = [UIColor grayColor];
         
-//            UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-//
-//            CGRect  numberViewBounds =self.sv.bounds;
-//        
-//            CGRect numberFrame = numberlLabel.frame;
-//        
-//            CGFloat nlabelX = (numberViewBounds.size.width- numberFrame.size.width)/2;
-//            CGFloat nlabelY = (numberViewBounds.size.height -numberFrame.size.height)/2;
-//        
-//            numberlLabel.text =@"i+1";
-//            [self.sv addSubview:numberlLabel];
-//        
-//            CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
-//            
-//            numberlLabel.frame = textFrame;
+        
+            UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(40,10+ 250 * i, width, height)];
+
+            CGRect  numberViewBounds =multiRect.bounds;
+        
+            CGRect numberFrame = numberlLabel.frame;
+        
+            CGFloat nlabelX = 60+(numberViewBounds.size.width- numberFrame.size.width)/2;
+            CGFloat nlabelY = (numberViewBounds.size.height -numberFrame.size.height)/2;
+        
+        numberlLabel.text =[NSString stringWithFormat:@"%d",i+1];
+        
+            CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
+            
+            numberlLabel.frame = textFrame;
+ 
+        
+        [multiRect addSubview:numberlLabel];
+
       
     }
     
@@ -72,6 +76,25 @@
         LabelView *multiRect = [[LabelView alloc] initWithFrame:CGRectMake(200,10+ 250 * j, width, height)];
         [self.sv addSubview:multiRect];
         multiRect.backgroundColor = [UIColor greenColor];
+        UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(200,10+ 250 * j, width, height)];
+        
+        CGRect  numberViewBounds =multiRect.bounds;
+        
+        CGRect numberFrame = numberlLabel.frame;
+        
+        CGFloat nlabelX = 60+(numberViewBounds.size.width- numberFrame.size.width)/2;
+        CGFloat nlabelY = (numberViewBounds.size.height -numberFrame.size.height)/2;
+        
+        numberlLabel.text =[NSString stringWithFormat:@"%d",j+4];
+        
+        CGRect textFrame = CGRectMake(nlabelX, nlabelY, numberViewBounds.size.width, numberFrame.size.height);
+        
+        numberlLabel.frame = textFrame;
+        
+        
+        [multiRect addSubview:numberlLabel];
+
+        
         
     }
 
