@@ -48,7 +48,7 @@
         multiRect.backgroundColor = [UIColor grayColor];
         
         
-            UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(40,10+ 250 * i, width, height)];
+            UILabel *numberlLabel = [[UILabel alloc]initWithFrame:CGRectMake(50,10+ 250 * i, width, height)];
 
             CGRect  numberViewBounds =multiRect.bounds;
         
