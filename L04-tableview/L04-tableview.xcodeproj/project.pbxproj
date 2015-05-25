@@ -14,6 +14,7 @@
 		809DE0FB1B0C2BD30057693D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809DE0FA1B0C2BD30057693D /* Images.xcassets */; };
 		809DE0FE1B0C2BD30057693D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809DE0FC1B0C2BD30057693D /* LaunchScreen.xib */; };
 		809DE10A1B0C2BD30057693D /* L04_tableviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 809DE1091B0C2BD30057693D /* L04_tableviewTests.m */; };
+		809DE1151B0C39BC0057693D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 809DE1141B0C39BC0057693D /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		809DE1031B0C2BD30057693D /* L04-tableviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L04-tableviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		809DE1081B0C2BD30057693D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		809DE1091B0C2BD30057693D /* L04_tableviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L04_tableviewTests.m; sourceTree = "<group>"; };
+		809DE1131B0C39BC0057693D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		809DE1141B0C39BC0057693D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				809DE0F11B0C2BD30057693D /* AppDelegate.h */,
 				809DE0F21B0C2BD30057693D /* AppDelegate.m */,
 				809DE0F41B0C2BD30057693D /* ViewController.h */,
+				809DE1131B0C39BC0057693D /* Student.h */,
+				809DE1141B0C39BC0057693D /* Student.m */,
 				809DE0F51B0C2BD30057693D /* ViewController.m */,
 				809DE0F71B0C2BD30057693D /* Main.storyboard */,
 				809DE0FA1B0C2BD30057693D /* Images.xcassets */,
@@ -222,6 +227,7 @@
 				809DE0F61B0C2BD30057693D /* ViewController.m in Sources */,
 				809DE0F31B0C2BD30057693D /* AppDelegate.m in Sources */,
 				809DE0F01B0C2BD30057693D /* main.m in Sources */,
+				809DE1151B0C39BC0057693D /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "Student.h"
+
+@interface ViewController () <UITableViewDataSource> ,<uitablevi>
 @property(strong,nonatomic)UITableView *tableView;
+
+@property (strong,nonatomic)NSArray *studentsArray;
 
 @end
 
@@ -22,7 +26,12 @@
     
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds
                                                          style:UITableViewStylePlain];
-
+    [self.view addSubview:_tableView];
+    self.tableView.delegate =self;
+    
+    
+    self.tableview.registerClass:[UITableViewCell Class]//告诉in什么类
+    self.tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
