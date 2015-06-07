@@ -15,6 +15,10 @@
 		807E533E1B24113B0003E52A /* MyMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E533D1B24113B0003E52A /* MyMovieTests.m */; };
 		807E534A1B2412DE0003E52A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E53481B2412DE0003E52A /* SearchViewController.m */; };
 		807E534B1B2412DE0003E52A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807E53491B2412DE0003E52A /* SearchViewController.xib */; };
+		807E534E1B241E480003E52A /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E534D1B241E480003E52A /* SearchResult.m */; };
+		807E53501B2421D00003E52A /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807E534F1B2421D00003E52A /* SearchResultCell.xib */; };
+		807E53531B2426390003E52A /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E53521B2426390003E52A /* SearchResultCell.m */; };
+		807E53551B24293E0003E52A /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807E53541B24293E0003E52A /* NothingFoundCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,12 @@
 		807E53471B2412DE0003E52A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		807E53481B2412DE0003E52A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		807E53491B2412DE0003E52A /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		807E534C1B241E480003E52A /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		807E534D1B241E480003E52A /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		807E534F1B2421D00003E52A /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		807E53511B2426390003E52A /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
+		807E53521B2426390003E52A /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
+		807E53541B24293E0003E52A /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		E020E6AFD07E1DC987D7E629 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +106,12 @@
 				807E53481B2412DE0003E52A /* SearchViewController.m */,
 				807E53491B2412DE0003E52A /* SearchViewController.xib */,
 				807E53211B24113B0003E52A /* Supporting Files */,
+				807E534C1B241E480003E52A /* SearchResult.h */,
+				807E534D1B241E480003E52A /* SearchResult.m */,
+				807E534F1B2421D00003E52A /* SearchResultCell.xib */,
+				807E53511B2426390003E52A /* SearchResultCell.h */,
+				807E53521B2426390003E52A /* SearchResultCell.m */,
+				807E53541B24293E0003E52A /* NothingFoundCell.xib */,
 			);
 			path = MyMovie;
 			sourceTree = "<group>";
@@ -227,6 +243,8 @@
 			files = (
 				807E53321B24113B0003E52A /* LaunchScreen.xib in Resources */,
 				807E532F1B24113B0003E52A /* Images.xcassets in Resources */,
+				807E53501B2421D00003E52A /* SearchResultCell.xib in Resources */,
+				807E53551B24293E0003E52A /* NothingFoundCell.xib in Resources */,
 				807E534B1B2412DE0003E52A /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +298,8 @@
 			files = (
 				807E53271B24113B0003E52A /* AppDelegate.m in Sources */,
 				807E534A1B2412DE0003E52A /* SearchViewController.m in Sources */,
+				807E53531B2426390003E52A /* SearchResultCell.m in Sources */,
+				807E534E1B241E480003E52A /* SearchResult.m in Sources */,
 				807E53241B24113B0003E52A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
