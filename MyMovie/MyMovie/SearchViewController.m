@@ -72,21 +72,34 @@ static NSString * const NothingFoundCellIdentifier = @"NothingFoundCell";
     }
 }
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
-    [searchBar resignFirstResponder];
-    _searchResults = [NSMutableArray arrayWithCapacity:10];
-    if (![searchBar.text isEqualToString:@"justin bieber"]) {
-    for (int i = 0; i < 3; i++) {
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    if ([searchBar.text length] > 0)
+    { [searchBar resignFirstResponder];
+        _searchResults = [NSMutableArray arrayWithCapacity:10]; NSURL *url = [self urlWithSearchText:searchBar.text];
+        NSLog(@"URL '%@'", url);
         
-        SearchResult *searchResult = [[SearchResult alloc] init];
-        searchResult.name = [NSString stringWithFormat:@"Fake Result %d for", i];
-        searchResult.artistName = searchBar.text;
-        [_searchResults addObject:searchResult];
-    }
-    }
+        NSString *jsonString = [self performStoreRequestWithURL:url]; NSLog(@"Received JSON string '%@'", jsonString);
+        
         [self.tableView reloadData];
-}
+    } }
+
+- (NSString *)performStoreRequestWithURL:(NSURL *)url {
+    NSError *error;
+    NSString *resultString = [NSString stringWithContentsOfURL:url
+                                                      encoding:NSUTF8StringEncoding error:&error]; if (resultString == nil) {
+        NSLog(@"Download Error: %@", error);
+        return nil; }
+    return resultString; }
+
+
+//search text through network
+- (NSURL *)urlWithSearchText:(NSString *)searchText {
+    NSString *escapedSearchText = [searchText stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *urlString = [NSString stringWithFormat: @"http://itunes.apple.com/search?term=%@", escapedSearchText];
+    NSURL *url = [NSURL URLWithString:urlString];
+    return url; }
+
+
 
 - (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar {
     return UIBarPositionTopAttached; }
