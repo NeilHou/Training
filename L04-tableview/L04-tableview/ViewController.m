@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+//self
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds
                                                          style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
